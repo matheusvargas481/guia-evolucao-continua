@@ -3,9 +3,6 @@
 # GUIA DIRECIONADO DE EVOLUÇÃO CONTÍNUA
 ## Backend → Full Stack → Full Cycle → IA-first
 
-# GUIA DE EVOLUÇÃO CONTÍNUA
-## Full Stack → Full Cycle → IA-first
-
 ---
 
 # 1. Sua posição atual
