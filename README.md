@@ -1,320 +1,405 @@
 # guia-evolucao-continua
 
-# GUIA DE EVOLUÇÃO CONTÍNUA
-
-## Full Stack → Full Cycle → IA-first
-
----
-
-# 1. Sua posição atual
-
-Pelo que você respondeu, hoje você está aqui:
-
-## Nível atual
-
-> **Intermediário inicial com execução backend básica, mas baixa consciência sistêmica.**
-
-Você consegue:
-
-* fazer backend simples;
-* criar API básica;
-* usar Spring com estrutura conhecida;
-* resolver quando há erro explícito.
-
-Mas ainda não domina bem:
-
-* fluxo interno de uma aplicação;
-* arquitetura;
-* tomada de decisão;
-* frontend;
-* deploy;
-* performance;
-* uso consciente de IA.
-
-Isso não é ruim. Isso é um mapa claro.
+# GUIA DIRECIONADO DE EVOLUÇÃO CONTÍNUA
+## Backend → Full Stack → Full Cycle → IA-first
 
 ---
 
-# 2. Seu objetivo real
+# 1. Objetivo deste guia
 
-Você quer chegar em três níveis:
+Este guia existe para me tirar do estado atual:
 
-## 1. Full Stack
+> “Consigo fazer algumas coisas funcionarem, mas não tenho segurança do que estou fazendo.”
 
-Conseguir construir:
+E me levar progressivamente para:
 
-* backend;
-* frontend;
-* integração entre os dois;
-* banco de dados;
-* autenticação;
-* fluxo completo de produto.
+> “Consigo construir, entender, explicar, melhorar, operar e evoluir sistemas com autonomia.”
 
-## 2. Full Cycle
+Meu objetivo final é me tornar:
 
-Além de construir, conseguir:
-
-* rodar localmente;
-* testar;
-* fazer deploy;
-* observar logs;
-* entender produção;
-* tomar responsabilidade pelo ciclo inteiro.
-
-## 3. IA-first / IA Design
-
-Conseguir:
-
-* usar IA sem terceirizar pensamento;
-* projetar sistemas com IA;
-* criar features com LLMs;
-* desenhar fluxos com prompts, contexto, RAG, agentes e automações;
-* usar IA para acelerar aprendizado e entrega.
+1. Desenvolvedor Backend sólido
+2. Desenvolvedor Full Stack funcional
+3. Desenvolvedor Full Cycle
+4. Desenvolvedor IA-first, usando IA sem virar dependente dela
 
 ---
 
-# 3. O princípio central
+# 2. Minha posição atual
 
-Grave isso:
+Hoje eu estou em um nível de:
 
-> **Você vai aprender construindo, rodando, quebrando, explicando e melhorando.**
+> Intermediário inicial com execução backend básica, mas baixa consciência sistêmica.
 
-A ordem é sempre essa:
+Eu consigo:
 
-```
+- Criar APIs simples com Java/Spring
+- Organizar Controller, Service e Repository quando sigo um padrão conhecido
+- Fazer CRUD simples
+- Conectar com banco em cenários simples
+- Resolver erros quando eles aparecem claramente
+
+Mas ainda preciso desenvolver:
+
+- Entendimento do fluxo interno do Spring
+- Injeção de dependência
+- HTTP com mais profundidade
+- Arquitetura
+- Performance
+- Frontend
+- Deploy
+- Observabilidade
+- Autonomia
+- Uso saudável de IA
+
+---
+
+# 3. Princípio central
+
+Eu não vou estudar para decorar.
+
+Eu vou treinar para reconhecer padrões.
+
+A ordem do meu aprendizado será sempre:
+
+```text
 Construir → Rodar → Quebrar → Entender → Melhorar → Explicar
 ```
 
-Nunca comece pela teoria pura.
+A teoria entra depois da prática.
 
-Para o seu perfil, teoria vem depois da prática.
+Primeiro eu faço funcionar.
+
+Depois eu entendo.
+
+Depois eu melhoro.
 
 ---
 
-# 4. O ciclo diário obrigatório
+# 4. Regra diária mínima
 
-Todo estudo seu deve seguir este ciclo.
+Todo dia eu devo treinar no mínimo 15 minutos.
 
-## Tempo mínimo
+Se eu estiver bem, posso treinar 30, 45 ou 60 minutos.
 
-```
-15 minutos por dia
-```
+Mas a regra mínima é:
 
-## Tempo ideal
-
-```
-30 a 60 minutos
+```text
+15 minutos todos os dias
 ```
 
-## Estrutura
+Mesmo que seja pouco, eu não quebro a sequência.
 
-### Etapa 1 — Construir
+---
 
-Pergunta:
+# 5. Protocolo diário fixo
 
-> Qual é a menor coisa que eu consigo fazer funcionar hoje?
+Todo treino deve seguir esta estrutura.
+
+## 5.1. Minuto 0 a 2 — Preparar
+
+Antes de codar, eu escrevo:
+
+```text
+Hoje eu vou treinar:
+O menor resultado esperado é:
+```
+
+Exemplo:
+
+```text
+Hoje eu vou treinar: criar endpoint POST /tasks
+O menor resultado esperado é: conseguir enviar JSON e receber uma resposta
+```
+
+---
+
+## 5.2. Minuto 2 a 10 — Construir
+
+Eu implemento a menor versão possível.
+
+Regras:
+
+- Não tentar fazer perfeito
+- Não tentar fazer bonito
+- Não criar arquitetura complexa
+- Não usar IA para fazer por mim
+- Fazer funcionar primeiro
+
+---
+
+## 5.3. Minuto 10 a 13 — Rodar
+
+Eu preciso validar que funciona.
+
+Pode ser usando:
+
+- Navegador
+- Postman
+- Insomnia
+- curl
+- Teste simples
+- Log no terminal
+
+Pergunta obrigatória:
+
+```text
+Isso realmente funcionou ou eu só acho que funcionou?
+```
+
+---
+
+## 5.4. Minuto 13 a 17 — Quebrar
+
+Eu tento fazer dar errado.
 
 Exemplos:
 
-* endpoint;
-* tela;
-* chamada de API;
-* validação;
-* consulta ao banco;
-* cache simples;
-* componente React;
-* deploy local.
+- Enviar campo vazio
+- Buscar ID inexistente
+- Enviar JSON errado
+- Chamar endpoint duas vezes
+- Testar lista vazia
+- Testar valor nulo
 
----
+Pergunta obrigatória:
 
-### Etapa 2 — Rodar
-
-Pergunta:
-
-> Isso realmente funciona ou eu só acho que funciona?
-
-Ação:
-
-* subir aplicação;
-* fazer chamada;
-* ver resposta;
-* testar erro básico;
-* observar log.
-
-Sem rodar, não conta como treino.
-
----
-
-### Etapa 3 — Quebrar
-
-Pergunta:
-
-> Onde isso falha?
-
-Procure:
-
-* entrada inválida;
-* dado nulo;
-* erro de banco;
-* requisições repetidas;
-* lentidão;
-* duplicação;
-* regra confusa.
-
----
-
-### Etapa 4 — Entender
-
-Pergunta:
-
-> O que aconteceu por trás?
-
-Exemplos:
-
-* quem recebeu a requisição?
-* quem chamou o service?
-* quem acessou o banco?
-* quem montou a resposta?
-* o que o Spring fez automaticamente?
-* o que o navegador fez?
-* o que o HTTP transportou?
-
----
-
-### Etapa 5 — Melhorar
-
-Pergunta:
-
-> Qual é uma melhoria pequena que eu consigo fazer hoje?
-
-Pode ser:
-
-* renomear método;
-* separar responsabilidade;
-* validar entrada;
-* tratar erro;
-* adicionar log;
-* criar teste;
-* melhorar resposta;
-* extrair componente;
-* paginar resultado.
-
----
-
-### Etapa 6 — Explicar
-
-No final, escreva:
-
+```text
+Onde isso quebra?
 ```
+
+---
+
+## 5.5. Minuto 17 a 20 — Explicar
+
+Eu escrevo:
+
+```text
 Hoje eu construí:
-Hoje eu entendi:
-Hoje eu ainda não entendi:
-Próximo passo:
+Entrada:
+Processamento:
+Saída:
+Onde quebrou:
+O que eu ainda não entendi:
 ```
 
-Esse registro é o que vai te dar autonomia.
+Se eu tiver só 15 minutos, posso escrever menos, mas preciso escrever algo.
 
 ---
 
-# 5. As grandes etapas de evolução
+# 6. Regra de uso da IA
 
-Você vai evoluir em 8 etapas.
+A IA não deve pensar por mim.
 
-Não são “30 dias”.
-São fases. Você só avança quando começa a dominar a anterior.
+Eu devo usar IA depois de tentar.
+
+## 6.1. Ordem correta
+
+```text
+1. Eu tento
+2. Eu rodo
+3. Eu erro
+4. Eu penso
+5. Eu peço ajuda
+6. Eu comparo
+7. Eu reexplico com minhas palavras
+```
 
 ---
 
-# ETAPA 1 — Reconstruir sua base de backend
+## 6.2. Prompts permitidos
+
+### Para entender
+
+```text
+Explique esse código passo a passo.
+Não reescreva ainda.
+Depois me faça perguntas para testar se eu entendi.
+```
+
+### Para revisar
+
+```text
+Analise esse código como um revisor técnico.
+Aponte problemas de clareza, responsabilidade, erro e manutenção.
+Não entregue a solução pronta ainda.
+```
+
+### Para arquitetura
+
+```text
+Tenho essa implementação.
+Me diga quais responsabilidades estão misturadas.
+Explique por que isso pode ser um problema.
+```
+
+### Para performance
+
+```text
+Olhe esse endpoint.
+Quais hipóteses de lentidão podem existir?
+Não proponha otimizações avançadas ainda.
+```
+
+### Para autonomia
+
+```text
+Não me dê a resposta pronta.
+Me guie com perguntas para eu mesmo chegar na solução.
+```
+
+---
+
+## 6.3. Prompts proibidos no início
+
+Evitar:
+
+```text
+Faça tudo para mim.
+Crie o projeto inteiro.
+Resolva esse erro sem explicar.
+Me dê a solução completa.
+```
+
+Esses prompts reduzem meu esforço cognitivo.
+
+---
+
+# 7. Projeto guia
+
+Meu projeto principal será:
+
+# TaskFlow IA
+
+Um sistema de tarefas evolutivo.
+
+Ele começa simples e cresce até virar um sistema Full Stack, Full Cycle e depois IA-first.
+
+Eu não vou trocar de projeto toda hora.
+
+Vou evoluir o mesmo projeto.
+
+---
+
+# 8. Stack inicial
+
+## Backend
+
+```text
+Java
+Spring Boot
+Spring Web
+Spring Data JPA
+PostgreSQL
+Maven ou Gradle
+```
+
+## Frontend inicial
+
+```text
+HTML
+CSS
+JavaScript puro
+```
+
+## Banco
+
+```text
+PostgreSQL
+```
+
+## IDE
+
+```text
+IntelliJ IDEA
+```
+
+## Ferramentas recomendadas
+
+Eu posso usar:
+
+```text
+IntelliJ IDEA
+Postman ou Insomnia
+DBeaver
+Docker Desktop futuramente
+Git
+GitHub
+```
+
+No começo, não preciso dominar todas.
+
+A ordem é:
+
+```text
+IntelliJ → Postman/Insomnia → PostgreSQL → Git → Docker → Deploy
+```
+
+---
+
+# 9. Etapas de evolução
+
+Este guia é dividido em etapas.
+
+Eu não avanço porque passou um número de dias.
+
+Eu avanço quando consigo cumprir os critérios da etapa.
+
+---
+
+# ETAPA 1 — Backend básico consciente
 
 ## Objetivo
 
 Sair de:
 
-> “faço funcionar, mas não sei explicar”
-
-para:
-
-> “sei explicar o fluxo básico de uma aplicação Spring”.
-
----
-
-## Você precisa dominar
-
-### 1. Requisição e resposta
-
-Você precisa saber explicar:
-
-```
-Cliente → HTTP → Controller → Service → Repository → Banco → Response
+```text
+Eu faço funcionar, mas não sei explicar.
 ```
 
-Perguntas obrigatórias:
+Para:
 
-* O que chega no controller?
-* O que o controller deve fazer?
-* O que o service deve fazer?
-* O que o repository deve fazer?
-* Quem valida?
-* Quem transforma dados?
-* Quem acessa banco?
-
----
-
-### 2. Controller
-
-Você precisa entender que o controller:
-
-* recebe requisição;
-* valida entrada básica ou encaminha validação;
-* chama o service;
-* retorna resposta.
-
-Ele não deveria conter regra de negócio pesada.
-
----
-
-### 3. Service
-
-O service:
-
-* concentra regra de negócio;
-* orquestra fluxo;
-* chama repository;
-* decide o que fazer quando algo não existe;
-* aplica regras.
-
----
-
-### 4. Repository
-
-O repository:
-
-* acessa dados;
-* conversa com banco;
-* não deveria decidir regra de negócio.
-
----
-
-### 5. DTO
-
-Você precisa entender por que DTO existe:
-
-* não expor entidade diretamente;
-* controlar entrada;
-* controlar saída;
-* separar modelo interno de contrato externo.
-
----
-
-## Exercícios dessa etapa
-
-Crie um mini backend de tarefas.
-
-### Funcionalidades
-
+```text
+Eu faço funcionar e sei explicar o caminho da requisição.
 ```
+
+---
+
+## Projeto nesta etapa
+
+Criar o backend inicial de tarefas.
+
+Entidade:
+
+```text
+Task
+```
+
+Campos:
+
+```text
+id
+title
+description
+status
+createdAt
+updatedAt
+```
+
+Status possíveis:
+
+```text
+PENDING
+IN_PROGRESS
+DONE
+```
+
+---
+
+## Funcionalidades obrigatórias
+
+Criar estes endpoints:
+
+```text
 POST /tasks
 GET /tasks
 GET /tasks/{id}
@@ -322,1172 +407,1576 @@ PUT /tasks/{id}
 DELETE /tasks/{id}
 ```
 
-A entidade pode ter:
+---
 
-```
-id
-title
-description
-status
-createdAt
+## Estrutura mínima
+
+Eu devo criar:
+
+```text
+TaskController
+TaskService
+TaskRepository
+Task
+TaskRequest
+TaskResponse
 ```
 
 ---
 
-## Checklist de domínio
+## O que cada parte deve fazer
 
-Você só considera essa etapa boa quando conseguir responder:
+### TaskController
 
-* Sei explicar o caminho completo de uma requisição?
-* Sei por que existe controller?
-* Sei por que existe service?
-* Sei por que existe repository?
-* Sei por que usar DTO?
-* Consigo criar CRUD simples sem tutorial completo?
-* Consigo tratar erro quando ID não existe?
+Responsabilidade:
+
+```text
+Receber a requisição HTTP.
+Chamar o service.
+Retornar a resposta.
+```
+
+O controller não deve conter regra de negócio pesada.
 
 ---
 
-# ETAPA 2 — Criar consciência de arquitetura
+### TaskService
+
+Responsabilidade:
+
+```text
+Executar a regra de negócio.
+Validar decisões.
+Chamar o repository.
+Decidir o que fazer quando algo não existe.
+```
+
+---
+
+### TaskRepository
+
+Responsabilidade:
+
+```text
+Acessar o banco de dados.
+Salvar.
+Buscar.
+Deletar.
+```
+
+---
+
+### Task
+
+Responsabilidade:
+
+```text
+Representar a entidade interna do sistema.
+É o modelo persistido no banco.
+```
+
+---
+
+### TaskRequest
+
+Responsabilidade:
+
+```text
+Representar os dados que entram pela API.
+```
+
+---
+
+### TaskResponse
+
+Responsabilidade:
+
+```text
+Representar os dados que saem pela API.
+```
+
+---
+
+## Treino diário desta etapa
+
+A cada dia, eu faço uma pequena parte.
+
+### Dia de treino A — Criar endpoint
+
+Exemplo:
+
+```text
+Criar POST /tasks
+```
+
+Eu devo conseguir:
+
+```text
+Enviar JSON
+Receber resposta
+Salvar no banco ou em memória
+Ver a tarefa criada
+```
+
+---
+
+### Dia de treino B — Explicar fluxo
+
+Eu pego o endpoint criado e escrevo:
+
+```text
+A requisição entra em:
+Depois chama:
+Depois acessa:
+Depois retorna:
+```
+
+Exemplo:
+
+```text
+A requisição entra no TaskController.
+O controller chama TaskService.
+O service cria a Task.
+O service chama TaskRepository.
+O repository salva no PostgreSQL.
+O service transforma em response.
+O controller retorna HTTP 201.
+```
+
+---
+
+### Dia de treino C — Quebrar
+
+Eu tento causar erro.
+
+Exemplos:
+
+```text
+Enviar title vazio.
+Buscar ID inexistente.
+Deletar ID inexistente.
+Enviar status inválido.
+```
+
+Depois escrevo:
+
+```text
+O que aconteceu?
+O erro ficou claro?
+A API respondeu bem?
+O usuário entenderia?
+```
+
+---
+
+## Checklist de progresso da etapa 1
+
+Eu só avanço quando conseguir responder:
+
+```text
+[ ] Sei criar um endpoint simples sem tutorial completo
+[ ] Sei explicar o fluxo Controller → Service → Repository
+[ ] Sei o que entra e o que sai de cada endpoint
+[ ] Sei salvar e buscar dados simples
+[ ] Sei tratar ID inexistente
+[ ] Sei diferenciar entidade de DTO
+[ ] Sei rodar e testar manualmente
+```
+
+---
+
+# ETAPA 2 — Fundamentos do Spring e HTTP
 
 ## Objetivo
 
-Sair de:
+Parar de tratar Spring como mágica.
 
-> “eu organizo porque vi assim”
-
-para:
-
-> “eu sei por que essa estrutura existe”.
+Eu preciso entender o suficiente para saber o que está acontecendo.
 
 ---
 
-## Conceitos essenciais
-
-### 1. Responsabilidade única
-
-Pergunta:
-
-> Essa classe tem um motivo claro para existir?
-
-Sinais ruins:
-
-* classe faz tudo;
-* método gigante;
-* regra de negócio no controller;
-* validação espalhada;
-* nomes genéricos;
-* código duplicado.
-
----
-
-### 2. Acoplamento
-
-Pergunta:
-
-> Uma mudança pequena quebra muita coisa?
-
-Sinais ruins:
-
-* service conhece detalhe demais;
-* controller monta regra;
-* repository retorna coisa que vaza para API;
-* frontend depende de formato ruim do backend.
-
----
-
-### 3. Coesão
-
-Pergunta:
-
-> As coisas que estão juntas realmente pertencem juntas?
-
-Boa coesão:
-
-* UserService cuida de usuários;
-* PaymentService cuida de pagamento;
-* TaskController só expõe tarefas;
-* TaskRepository só acessa dados de tarefa.
-
----
-
-### 4. Camadas
-
-Modelo inicial:
-
-```
-Controller
-Service
-Repository
-Domain/Entity
-DTO
-Mapper
-Exception
-Config
-```
-
----
-
-## Exercício dessa etapa
-
-Pegue o CRUD de tarefas e refatore.
-
-Adicione:
-
-* DTO de criação;
-* DTO de resposta;
-* tratamento de erro;
-* service separado;
-* mapper simples;
-* validação de título obrigatório.
-
----
-
-## Perguntas de arquitetura
-
-Use sempre:
-
-```
-Essa classe faz coisa demais?
-Esse método tem responsabilidade clara?
-Essa regra está no lugar certo?
-Se eu mudar essa regra, quantos arquivos mudam?
-O nome explica a intenção?
-Existe duplicação?
-```
-
----
-
-## Checklist de domínio
-
-Você avança quando conseguir:
-
-* olhar uma classe e dizer se ela faz coisa demais;
-* separar controller e service com intenção;
-* identificar duplicação simples;
-* melhorar nome de métodos;
-* explicar por que uma regra fica no service.
-
----
-
-# ETAPA 3 — Fundamentos que sustentam backend
-
-## Objetivo
-
-Entender o mínimo necessário para deixar de ver framework como magia.
-
----
-
-## Fundamentos obrigatórios
+## Conceitos obrigatórios
 
 ### 1. HTTP
 
-Você precisa entender:
+Eu preciso entender:
 
-* GET;
-* POST;
-* PUT;
-* PATCH;
-* DELETE;
-* status codes;
-* headers;
-* body;
-* query params;
-* path params.
-
-Perguntas:
-
-```
-Quando usar GET?
-Quando usar POST?
-Qual diferença entre PUT e PATCH?
-O que significa 400?
-O que significa 404?
-O que significa 500?
+```text
+Request
+Response
+Header
+Body
+Status Code
+Path Param
+Query Param
+JSON
 ```
 
 ---
 
-### 2. JSON
+### 2. Métodos HTTP
 
-Você precisa saber:
+Eu preciso saber quando usar:
 
-* o que é JSON;
-* como frontend envia JSON;
-* como backend converte JSON em objeto;
-* como objeto vira JSON na resposta.
-
----
-
-### 3. Injeção de dependência
-
-Você precisa conseguir explicar assim:
-
-> Em vez de eu criar manualmente os objetos, o Spring cria e entrega as dependências para mim.
-
-Exemplo mental:
-
-```
-Controller precisa de Service.
-Service precisa de Repository.
-Spring monta isso para você.
+```text
+GET    → buscar dados
+POST   → criar algo
+PUT    → substituir/atualizar algo inteiro
+PATCH  → atualizar parte de algo
+DELETE → remover algo
 ```
 
 ---
 
-### 4. Beans
+### 3. Status codes essenciais
 
-Entender que:
-
-* Spring gerencia objetos;
-* `@Service`, `@Repository`, `@Component`, `@Controller` indicam objetos gerenciados;
-* `@Autowired` ou construtor injeta dependências.
-
----
-
-### 5. Thread
-
-Explicação inicial:
-
-> Uma thread é uma linha de execução. Em servidores web, múltiplas requisições podem ser processadas ao mesmo tempo.
-
-Você precisa entender isso antes de performance.
-
----
-
-### 6. Memória
-
-No nível inicial:
-
-```
-Stack → execução de métodos e variáveis locais
-Heap → objetos criados em memória
-```
-
-Não precisa virar especialista em JVM agora.
-
----
-
-## Exercício dessa etapa
-
-Para cada conceito, faça:
-
-```
-1 código pequeno
-1 explicação em 5 linhas
-1 exemplo de onde aparece no seu backend
+```text
+200 → sucesso
+201 → criado
+204 → sucesso sem conteúdo
+400 → erro de entrada
+401 → não autenticado
+403 → sem permissão
+404 → não encontrado
+409 → conflito
+500 → erro interno
 ```
 
 ---
 
-# ETAPA 4 — Performance e pensamento crítico
+### 4. Injeção de dependência
+
+Explicação que eu preciso saber dar:
+
+```text
+Injeção de dependência é quando o Spring cria e entrega os objetos necessários para uma classe funcionar.
+```
+
+Exemplo:
+
+```text
+TaskController precisa de TaskService.
+TaskService precisa de TaskRepository.
+O Spring cria esses objetos e injeta via construtor.
+```
+
+---
+
+### 5. Beans
+
+Eu preciso entender:
+
+```text
+Bean é um objeto gerenciado pelo Spring.
+```
+
+Anotações comuns:
+
+```text
+@RestController
+@Service
+@Repository
+@Component
+@Configuration
+```
+
+---
+
+## Exercício obrigatório
+
+Pegar o TaskFlow e escrever:
+
+```text
+Quais classes são gerenciadas pelo Spring?
+Quem depende de quem?
+Quem o Spring injeta em quem?
+```
+
+---
+
+## Checklist de progresso da etapa 2
+
+```text
+[ ] Sei explicar request e response
+[ ] Sei diferenciar body, header, path param e query param
+[ ] Sei usar status code adequado em casos simples
+[ ] Sei explicar injeção de dependência
+[ ] Sei explicar o que é um bean
+[ ] Sei o que o Spring está fazendo no fluxo básico
+```
+
+---
+
+# ETAPA 3 — Arquitetura inicial
 
 ## Objetivo
 
 Sair de:
 
-> “só sei que ficou lento se alguém reclamar”
+```text
+Eu separo em camadas porque aprendi assim.
+```
 
-para:
+Para:
 
-> “sei levantar hipóteses de lentidão”.
+```text
+Eu separo em camadas porque entendo responsabilidade.
+```
 
 ---
 
-## Modelo mental de performance
+## Pergunta principal da etapa
 
-Toda lentidão geralmente está em um destes pontos:
-
+```text
+Essa classe está fazendo o que deveria fazer?
 ```
-Banco
-Rede
-CPU
-Memória
-Concorrência
-I/O
-Algoritmo ruim
-Chamadas externas
-Volume de dados
+
+---
+
+## Regras de arquitetura inicial
+
+### Controller
+
+Pode:
+
+```text
+Receber request
+Chamar service
+Retornar response
+```
+
+Não deve:
+
+```text
+Ter regra de negócio
+Montar lógica complexa
+Acessar repository diretamente
+```
+
+---
+
+### Service
+
+Pode:
+
+```text
+Aplicar regra de negócio
+Validar decisões
+Orquestrar chamadas
+Chamar repository
+```
+
+Não deve:
+
+```text
+Depender de HTTP diretamente
+Retornar detalhes desnecessários da infraestrutura
+```
+
+---
+
+### Repository
+
+Pode:
+
+```text
+Buscar dados
+Salvar dados
+Remover dados
+```
+
+Não deve:
+
+```text
+Decidir regra de negócio
+Formatar response
+Tratar regra de API
+```
+
+---
+
+## Treino prático
+
+Pegar cada endpoint e responder:
+
+```text
+O controller está simples?
+O service contém a regra?
+O repository só acessa dados?
+Existe código duplicado?
+O nome dos métodos explica intenção?
+```
+
+---
+
+## Refatorações obrigatórias
+
+No TaskFlow, eu devo fazer:
+
+```text
+Criar DTOs separados
+Criar mapper simples
+Criar exception para Task não encontrada
+Criar handler global de erros
+Melhorar nomes de métodos
+Remover duplicações óbvias
+```
+
+---
+
+## Checklist de progresso da etapa 3
+
+```text
+[ ] Sei dizer a responsabilidade de cada camada
+[ ] Sei identificar regra de negócio no lugar errado
+[ ] Sei criar DTO de entrada e saída
+[ ] Sei criar tratamento de erro organizado
+[ ] Sei melhorar nome de método/classe
+[ ] Sei explicar por que uma mudança melhora o código
+```
+
+---
+
+# ETAPA 4 — Banco de dados com PostgreSQL
+
+## Objetivo
+
+Entender melhor como minha aplicação conversa com o banco.
+
+---
+
+## Conceitos obrigatórios
+
+Eu preciso entender:
+
+```text
+Tabela
+Coluna
+Linha
+Chave primária
+Chave estrangeira
+Relacionamento
+Índice
+Query
+Transação
+```
+
+---
+
+## Exercícios práticos
+
+### Exercício 1 — Ver dados no banco
+
+Depois de criar uma task, abrir o banco e verificar:
+
+```text
+A task foi salva?
+Os campos estão corretos?
+O status foi salvo?
+createdAt foi preenchido?
+```
+
+---
+
+### Exercício 2 — Criar relacionamento
+
+Adicionar usuário:
+
+```text
+User
+```
+
+Campos:
+
+```text
+id
+name
+email
+createdAt
+```
+
+Relacionamento:
+
+```text
+Uma Task pertence a um User.
+Um User pode ter muitas Tasks.
+```
+
+---
+
+### Exercício 3 — Buscar tarefas por usuário
+
+Criar endpoint:
+
+```text
+GET /users/{userId}/tasks
 ```
 
 ---
 
 ## Perguntas obrigatórias
 
-Sempre que olhar um endpoint:
-
-```
-Quantas vezes acessa o banco?
-Busca dados demais?
-Tem paginação?
-Tem chamada externa?
-Pode repetir trabalho?
-Pode usar cache?
-Pode ter concorrência?
-O que acontece com 1000 usuários?
+```text
+Qual tabela foi criada?
+Qual coluna representa o relacionamento?
+O que acontece se eu deletar um usuário com tarefas?
+A consulta busca dados demais?
+Preciso de paginação?
 ```
 
 ---
 
-## Conceitos essenciais
+## Checklist de progresso da etapa 4
 
-### 1. Paginação
-
-Use quando:
-
-* lista pode crescer;
-* resposta pode ficar pesada;
-* usuário não precisa de tudo de uma vez.
-
----
-
-### 2. Cache
-
-Use quando:
-
-* dado é lido muitas vezes;
-* dado muda pouco;
-* custo de buscar é alto.
-
-Cuidado:
-
-* cache pode ficar desatualizado;
-* cache aumenta complexidade.
-
----
-
-### 3. Concorrência
-
-Pergunta:
-
-> Duas requisições ao mesmo tempo podem alterar o mesmo dado?
-
-Exemplo:
-
-```
-contador
-estoque
-saldo
-limite
-status de pedido
+```text
+[ ] Sei ver dados diretamente no PostgreSQL
+[ ] Sei explicar tabela, coluna e linha
+[ ] Sei criar relacionamento simples
+[ ] Sei buscar dados relacionados
+[ ] Sei perceber quando uma lista pode crescer demais
+[ ] Sei explicar o básico do que o JPA faz por mim
 ```
 
 ---
 
-### 4. N+1 queries
-
-Você precisa aprender a identificar quando:
-
-```
-1 consulta busca lista
-e depois várias consultas buscam detalhes
-```
-
-Isso é muito comum com ORM.
-
----
-
-## Exercícios dessa etapa
-
-No seu CRUD:
-
-* adicione paginação no GET;
-* simule muitos registros;
-* meça tempo básico;
-* adicione log de tempo;
-* crie endpoint que acessa dado repetido;
-* pense se cache faz sentido.
-
----
-
-## Checklist de domínio
-
-Você avança quando conseguir:
-
-* explicar por que paginar;
-* explicar quando cache ajuda;
-* identificar consulta desnecessária;
-* entender risco de múltiplas requisições;
-* levantar hipóteses de lentidão.
-
----
-
-# ETAPA 5 — Frontend mínimo funcional
+# ETAPA 5 — Performance inicial
 
 ## Objetivo
 
 Sair de:
 
-> “não sei montar UI”
+```text
+Só percebo lentidão quando alguém reclama.
+```
 
-para:
+Para:
 
-> “consigo criar uma interface simples que conversa com meu backend”.
+```text
+Consigo levantar hipóteses simples de lentidão.
+```
 
 ---
 
-## Stack sugerida
+## Modelo mental de performance
 
-Use algo simples:
+Quando algo está lento, eu devo investigar:
 
+```text
+Banco
+Volume de dados
+Rede
+CPU
+Memória
+Chamadas externas
+Concorrência
+Código repetindo trabalho
 ```
-HTML + CSS + JavaScript primeiro
-depois React
+
+---
+
+## Perguntas obrigatórias para qualquer endpoint
+
+```text
+Esse endpoint busca dados demais?
+Tem paginação?
+Quantas vezes acessa o banco?
+Existe loop chamando banco?
+Existe chamada externa?
+Pode ser chamado muitas vezes?
+Pode ter dados repetidos?
+Cache ajudaria ou só complicaria?
 ```
 
-Não comece direto tentando dominar React profundamente.
+---
+
+## Melhorias práticas no TaskFlow
+
+### 1. Paginação
+
+Alterar:
+
+```text
+GET /tasks
+```
+
+Para suportar:
+
+```text
+page
+size
+```
+
+Exemplo:
+
+```text
+GET /tasks?page=0&size=10
+```
+
+---
+
+### 2. Filtro por status
+
+Criar:
+
+```text
+GET /tasks?status=PENDING
+```
+
+---
+
+### 3. Medir tempo simples
+
+Adicionar log:
+
+```text
+Início da requisição
+Fim da requisição
+Tempo total
+```
+
+---
+
+### 4. Simular volume
+
+Criar várias tasks e observar:
+
+```text
+A resposta ficou pesada?
+A tela demorou?
+O banco respondeu rápido?
+```
+
+---
+
+## Cache: quando pensar nele
+
+Eu só penso em cache quando:
+
+```text
+O dado é lido muitas vezes
+O dado muda pouco
+Buscar o dado custa caro
+A lentidão foi observada ou é provável
+```
+
+Eu não uso cache só porque parece avançado.
+
+---
+
+## Checklist de progresso da etapa 5
+
+```text
+[ ] Sei explicar por que paginação existe
+[ ] Sei criar endpoint paginado
+[ ] Sei criar filtro simples
+[ ] Sei medir tempo básico com log
+[ ] Sei levantar hipóteses de lentidão
+[ ] Sei explicar quando cache pode ajudar
+```
+
+---
+
+# ETAPA 6 — Frontend com HTML, CSS e JavaScript
+
+## Objetivo
+
+Criar uma interface simples que conversa com meu backend.
 
 ---
 
 ## Primeiro alvo
 
-Criar uma tela para seu CRUD de tarefas.
+Criar uma tela web para o TaskFlow.
 
-A tela precisa:
+Ela deve permitir:
 
-* listar tarefas;
-* criar tarefa;
-* marcar status;
-* excluir tarefa;
-* mostrar erro simples.
-
----
-
-## Conceitos essenciais
-
-### 1. HTML
-
-Estrutura da página.
-
-### 2. CSS
-
-Aparência.
-
-### 3. JavaScript
-
-Comportamento.
-
-### 4. Fetch
-
-Comunicação com backend.
-
-Exemplo mental:
-
-```
-Botão clicado → JavaScript chama API → backend responde → tela atualiza
+```text
+Listar tarefas
+Criar tarefa
+Editar tarefa
+Excluir tarefa
+Alterar status
+Mostrar erro simples
 ```
 
 ---
 
-## Depois entra React
+## Estrutura inicial
 
-Você precisa entender:
+Arquivos:
 
-### 1. Componente
-
-Parte reutilizável da tela.
-
-### 2. Estado
-
-Informação que muda e afeta a tela.
-
-### 3. Re-render
-
-Quando estado muda, a tela redesenha.
-
-### 4. Props
-
-Dados passados de um componente para outro.
-
----
-
-## Exercício dessa etapa
-
-Crie:
-
-```
-TaskList
-TaskForm
-TaskItem
-```
-
-Fluxo:
-
-```
-React → fetch → Spring API → banco → resposta → React atualiza tela
+```text
+index.html
+style.css
+script.js
 ```
 
 ---
 
-## Checklist de domínio
+## Responsabilidade de cada arquivo
 
-Você avança quando conseguir:
+### index.html
 
-* criar tela simples;
-* consumir API;
-* mostrar dados;
-* enviar formulário;
-* entender estado básico;
-* entender por que a tela atualiza.
+Responsável por:
+
+```text
+Estrutura da página
+Campos
+Botões
+Listas
+Formulários
+```
 
 ---
 
-# ETAPA 6 — Full Stack real
+### style.css
+
+Responsável por:
+
+```text
+Aparência
+Espaçamento
+Cores
+Tamanho
+Organização visual
+```
+
+---
+
+### script.js
+
+Responsável por:
+
+```text
+Chamar API
+Escutar clique de botão
+Enviar formulário
+Atualizar tela
+Mostrar mensagens
+```
+
+---
+
+## Fluxo mental do frontend
+
+Eu preciso entender:
+
+```text
+Usuário clica
+JavaScript captura evento
+JavaScript chama backend com fetch
+Backend responde JSON
+JavaScript atualiza HTML
+Usuário vê resultado
+```
+
+---
+
+## Exercícios progressivos
+
+### Exercício 1 — Listar tarefas
+
+Criar botão:
+
+```text
+Carregar tarefas
+```
+
+Ao clicar:
+
+```text
+fetch GET /tasks
+renderizar lista na tela
+```
+
+---
+
+### Exercício 2 — Criar tarefa
+
+Criar formulário com:
+
+```text
+title
+description
+```
+
+Ao enviar:
+
+```text
+fetch POST /tasks
+limpar formulário
+recarregar lista
+```
+
+---
+
+### Exercício 3 — Excluir tarefa
+
+Cada item da lista deve ter botão:
+
+```text
+Excluir
+```
+
+Ao clicar:
+
+```text
+fetch DELETE /tasks/{id}
+recarregar lista
+```
+
+---
+
+### Exercício 4 — Alterar status
+
+Cada tarefa deve permitir mudar status:
+
+```text
+PENDING
+IN_PROGRESS
+DONE
+```
+
+---
+
+## Checklist de progresso da etapa 6
+
+```text
+[ ] Sei criar HTML simples
+[ ] Sei estilizar o mínimo com CSS
+[ ] Sei usar fetch para chamar backend
+[ ] Sei renderizar dados na tela
+[ ] Sei enviar formulário
+[ ] Sei atualizar a tela depois de resposta
+[ ] Sei explicar como frontend conversa com backend
+```
+
+---
+
+# ETAPA 7 — Full Stack funcional
 
 ## Objetivo
 
-Juntar backend + frontend em um produto pequeno.
+Juntar backend e frontend em uma experiência completa.
 
 ---
 
-## Projeto base contínuo
+## O que o sistema precisa ter
 
-Você deve manter um único projeto evolutivo.
-
-Sugestão:
-
-> **Sistema de tarefas com usuários, autenticação, filtros, dashboard e IA depois.**
-
-Começa simples e cresce.
-
----
-
-## Módulos progressivos
-
-### Módulo 1 — Tarefas
-
-* criar;
-* listar;
-* editar;
-* excluir;
-* status.
-
-### Módulo 2 — Usuários
-
-* criar usuário;
-* listar usuário;
-* associar tarefa a usuário.
-
-### Módulo 3 — Autenticação
-
-* login;
-* token;
-* proteger rotas.
-
-### Módulo 4 — Filtros
-
-* buscar por status;
-* buscar por texto;
-* paginação.
-
-### Módulo 5 — Dashboard
-
-* total de tarefas;
-* tarefas concluídas;
-* tarefas atrasadas;
-* tarefas por usuário.
-
-### Módulo 6 — IA
-
-* resumir tarefas;
-* sugerir prioridade;
-* gerar plano do dia;
-* classificar tarefa.
+```text
+Backend Spring Boot
+PostgreSQL
+Frontend HTML/CSS/JS
+CRUD completo de tarefas
+Usuários
+Filtro
+Paginação
+Tratamento de erro
+```
 
 ---
 
-## Checklist Full Stack
+## Critérios de qualidade
 
-Você começa a virar Full Stack quando consegue:
+O sistema deve:
 
-* criar backend;
-* criar frontend;
-* conectar os dois;
-* tratar erro dos dois lados;
-* entender contrato de API;
-* alterar backend sem quebrar frontend;
-* alterar frontend sabendo o que pedir da API.
+```text
+Funcionar localmente
+Ter fluxo claro
+Ter API organizada
+Ter tela utilizável
+Ter mensagens de erro simples
+Ter dados persistidos no PostgreSQL
+```
 
 ---
 
-# ETAPA 7 — Full Cycle
+## Treino de integração
+
+Sempre que eu criar algo no backend, devo perguntar:
+
+```text
+Como o frontend vai consumir isso?
+O JSON está claro?
+O nome dos campos faz sentido?
+O erro é compreensível?
+A tela precisa de mais algum dado?
+```
+
+Sempre que eu criar algo no frontend, devo perguntar:
+
+```text
+Qual endpoint preciso chamar?
+Qual método HTTP?
+Qual body?
+Qual resposta espero?
+Como trato erro?
+```
+
+---
+
+## Checklist de progresso da etapa 7
+
+```text
+[ ] Consigo criar uma funcionalidade de ponta a ponta
+[ ] Consigo alterar backend e ajustar frontend
+[ ] Consigo entender contrato de API
+[ ] Consigo tratar erro dos dois lados
+[ ] Consigo explicar o fluxo tela → API → banco → tela
+```
+
+---
+
+# ETAPA 8 — Git e organização profissional
+
+## Objetivo
+
+Parar de tratar código como arquivo solto e começar a trabalhar como profissional.
+
+---
+
+## Conceitos obrigatórios
+
+```text
+Repositório
+Commit
+Branch
+Merge
+Pull Request
+Conflito
+Histórico
+```
+
+---
+
+## Rotina obrigatória
+
+A cada treino relevante:
+
+```text
+git status
+git add .
+git commit -m "mensagem clara"
+```
+
+Mensagem de commit deve dizer intenção.
+
+Exemplos:
+
+```text
+feat: create task endpoint
+fix: handle task not found
+refactor: separate task mapper
+chore: configure postgres
+```
+
+---
+
+## Branches
+
+Usar branches por pequena entrega:
+
+```text
+feature/create-task
+feature/list-tasks
+feature/frontend-task-list
+fix/task-not-found
+```
+
+---
+
+## Checklist de progresso da etapa 8
+
+```text
+[ ] Sei iniciar repositório
+[ ] Sei criar commit claro
+[ ] Sei criar branch
+[ ] Sei voltar e ver histórico
+[ ] Sei entender o que mudou
+[ ] Sei organizar evolução do projeto
+```
+
+---
+
+# ETAPA 9 — Full Cycle inicial
 
 ## Objetivo
 
 Sair de:
 
-> “eu só codifico”
-
-para:
-
-> “eu construo, rodo, entrego e observo”.
-
----
-
-## Você precisa dominar
-
-### 1. Git
-
-Não apenas comandos decorados.
-
-Você precisa saber:
-
+```text
+Eu só codifico.
 ```
-branch
-commit
-merge
-pull request
-rebase básico
-resolver conflito
+
+Para:
+
+```text
+Eu consigo rodar, configurar, entregar e observar.
 ```
 
 ---
 
-### 2. Docker
+## Docker
 
-Você precisa conseguir:
+Eu devo aprender Docker com objetivo prático.
 
-* rodar banco local;
-* rodar backend;
-* rodar frontend;
-* entender container;
-* entender imagem;
-* criar Dockerfile simples;
-* usar docker-compose.
+Primeiro uso:
 
----
-
-### 3. Banco local
-
-Exemplo:
-
+```text
+Rodar PostgreSQL local
 ```
-PostgreSQL via Docker
+
+Depois:
+
+```text
+Rodar backend
+Rodar frontend
+Subir tudo com docker-compose
 ```
 
 ---
 
-### 4. Configuração
+## Configuração
 
-Entender:
+Eu preciso entender:
 
-```
+```text
 application.yml
+application.properties
 variáveis de ambiente
-profiles
-config local vs produção
+profile local
+profile produção
 ```
 
 ---
 
-### 5. Deploy simples
+## Logs
 
-Primeiro objetivo:
+Eu devo adicionar logs que respondam:
 
-* subir backend em algum serviço;
-* subir frontend;
-* configurar banco;
-* acessar pela internet.
-
-Não precisa sofisticar no começo.
-
----
-
-### 6. Logs
-
-Você precisa saber responder:
-
-```
-Deu erro onde?
-Qual endpoint?
-Qual usuário?
-Qual exceção?
-Qual horário?
-Qual dado de entrada?
+```text
+Qual endpoint foi chamado?
+Qual ID foi usado?
+Qual erro aconteceu?
+Quanto tempo demorou?
 ```
 
 ---
 
-### 7. Observabilidade inicial
+## Health check
 
-Aprender:
+Criar ou usar endpoint para saber:
 
-* logs estruturados;
-* métricas básicas;
-* health check;
-* tempo de resposta.
-
----
-
-## Checklist Full Cycle
-
-Você está evoluindo para Full Cycle quando consegue:
-
-* subir aplicação local inteira;
-* rodar banco local;
-* configurar ambiente;
-* fazer deploy simples;
-* ler logs;
-* investigar erro;
-* entender impacto de mudança.
+```text
+A aplicação está viva?
+O banco está conectado?
+```
 
 ---
 
-# ETAPA 8 — IA-first e IA Design
+## Deploy simples
+
+Quando chegar aqui, eu devo subir:
+
+```text
+Backend
+Frontend
+Banco
+```
+
+Não precisa ser perfeito.
+
+Precisa funcionar acessível fora da minha máquina.
+
+---
+
+## Checklist de progresso da etapa 9
+
+```text
+[ ] Sei rodar PostgreSQL com Docker
+[ ] Sei configurar aplicação por ambiente
+[ ] Sei ler logs
+[ ] Sei investigar erro simples
+[ ] Sei subir aplicação local completa
+[ ] Sei fazer deploy simples
+```
+
+---
+
+# ETAPA 10 — IA-first sem dependência
 
 ## Objetivo
 
-Sair de:
-
-> “uso IA para copiar código”
-
-para:
-
-> “uso IA para pensar melhor, projetar melhor e entregar melhor”.
+Usar IA para ampliar meu pensamento, não substituir meu raciocínio.
 
 ---
 
-# Primeiro: regra principal
+## Primeiro recurso de IA no TaskFlow
 
-Você nunca deve usar IA assim:
+Adicionar funcionalidade:
 
-```
-"Faça tudo para mim"
-```
-
-Você deve usar assim:
-
-```
-"Me ajude a pensar"
-"Me dê alternativas"
-"Critique minha solução"
-"Explique o trade-off"
-"Faça perguntas antes de responder"
+```text
+Sugerir prioridade da tarefa
 ```
 
----
+Entrada:
 
-## Os 5 modos corretos de usar IA
-
-### 1. IA como tutor
-
-Use para entender.
-
-Prompt:
-
+```text
+title
+description
 ```
-Explique esse código passo a passo.
-Depois me faça 5 perguntas para testar se eu entendi.
-Não me dê respostas longas.
+
+Saída:
+
+```text
+LOW
+MEDIUM
+HIGH
 ```
 
 ---
 
-### 2. IA como revisor
+## Fluxo da feature
 
-Use para criticar.
-
-Prompt:
-
-```
-Analise esse código como um revisor sênior.
-Aponte problemas de clareza, responsabilidade, erro e manutenção.
-Não reescreva ainda.
+```text
+Usuário cria tarefa
+Sistema envia título e descrição para IA
+IA sugere prioridade
+Sistema salva sugestão
+Usuário pode aceitar ou alterar
 ```
 
 ---
 
-### 3. IA como arquiteto crítico
+## Perguntas obrigatórias antes de implementar
 
-Use para decisão.
-
-Prompt:
-
-```
-Tenho esse problema: [descreva].
-Me dê 3 abordagens possíveis.
-Para cada uma, mostre vantagens, riscos e quando não usar.
+```text
+O que acontece se a IA falhar?
+O usuário pode editar a sugestão?
+A resposta da IA pode vir inválida?
+Quanto tempo a chamada pode demorar?
+O sistema depende da IA para funcionar?
 ```
 
 ---
 
-### 4. IA como par de programação
+## Regra importante
 
-Use durante código.
+A IA não pode ser ponto único de falha.
 
-Prompt:
+Se a IA falhar:
 
-```
-Vou implementar sozinho.
-Me guie com perguntas.
-Não entregue a solução completa, a menos que eu peça.
-```
-
----
-
-### 5. IA como acelerador de aprendizado
-
-Use depois de fazer.
-
-Prompt:
-
-```
-Eu implementei isso: [descreva].
-O que eu deveria ter aprendido aqui?
-Quais conceitos estão escondidos nessa implementação?
+```text
+A tarefa ainda deve ser criada
+A prioridade pode ficar vazia ou padrão
+O erro deve ser registrado
 ```
 
 ---
 
-# IA Design: o que você precisa aprender
+## Próximas features de IA
 
-Quando sua base estiver melhor, entre em:
+Depois da prioridade:
 
-## 1. Prompt design
-
-* clareza;
-* contexto;
-* restrições;
-* exemplos;
-* formato de saída.
-
-## 2. LLM APIs
-
-* enviar prompt;
-* receber resposta;
-* tratar erro;
-* controlar custo;
-* controlar latência.
-
-## 3. RAG
-
-Modelo mental:
-
-```
-Usuário pergunta
-Sistema busca documentos relevantes
-IA responde usando contexto
-```
-
-## 4. Embeddings
-
-Entender:
-
-```
-texto transformado em vetor para busca semântica
-```
-
-## 5. Agentes
-
-Cuidado aqui.
-
-Agente não é mágica.
-É um fluxo que pode:
-
-* decidir próxima ação;
-* chamar ferramenta;
-* observar resultado;
-* continuar.
-
-## 6. Avaliação
-
-Você precisa saber perguntar:
-
-```
-A resposta está correta?
-Está inventando?
-Usou fonte?
-Seguiu regra?
-É segura?
-É útil?
+```text
+Resumo das tarefas do dia
+Sugestão de plano diário
+Classificação automática por categoria
+Resumo semanal
+Busca semântica em tarefas
+RAG com documentos pessoais
 ```
 
 ---
 
-# 6. Sua régua de evolução
+## Checklist de progresso da etapa 10
 
-Use esta régua a cada mês.
+```text
+[ ] Sei chamar uma API de IA
+[ ] Sei montar prompt com contexto
+[ ] Sei tratar erro da IA
+[ ] Sei validar resposta da IA
+[ ] Sei não depender cegamente da IA
+[ ] Sei explicar o valor da feature
+```
+
+---
+
+# 10. Régua de nível
+
+Eu devo me avaliar mensalmente.
 
 ---
 
 ## Nível 1 — Executor guiado
 
-Você:
+Características:
 
-* faz seguindo exemplo;
-* depende de tutorial;
-* consulta muito;
-* entende parcialmente.
+```text
+Dependo de tutorial
+Faço funcionar com ajuda
+Não sei explicar bem
+Uso IA como muleta
+```
 
 Meta:
 
-> Fazer funcionar e explicar o básico.
+```text
+Fazer funcionar e explicar o básico.
+```
 
 ---
 
 ## Nível 2 — Executor consciente
 
-Você:
+Características:
 
-* cria CRUD simples;
-* entende fluxo;
-* sabe onde ficam as camadas;
-* começa a tratar erro;
-* já explica parte do que faz.
+```text
+Crio CRUD simples
+Entendo fluxo básico
+Sei onde ficam as camadas
+Trato erros simples
+```
 
 Meta:
 
-> Entender o que está fazendo.
+```text
+Entender o que estou fazendo.
+```
 
 ---
 
 ## Nível 3 — Desenvolvedor independente
 
-Você:
+Características:
 
-* começa tarefas sem tutorial;
-* quebra problema em partes;
-* pesquisa melhor;
-* usa IA com crítica;
-* cria backend e frontend simples.
+```text
+Começo tarefas pequenas sozinho
+Quebro problemas em partes
+Pesquiso melhor
+Uso IA com crítica
+Crio backend e frontend simples
+```
 
 Meta:
 
-> Construir features completas.
+```text
+Construir features completas.
+```
 
 ---
 
-## Nível 4 — Engenheiro de produto
+## Nível 4 — Full Stack funcional
 
-Você:
+Características:
 
-* pensa em usuário;
-* pensa em erro;
-* pensa em manutenção;
-* conecta frontend/backend;
-* toma decisões técnicas simples.
+```text
+Crio backend
+Crio frontend simples
+Integro os dois
+Uso banco
+Trato erro
+Entendo contrato de API
+```
 
 Meta:
 
-> Entregar funcionalidade com qualidade.
+```text
+Entregar produto web simples de ponta a ponta.
+```
 
 ---
 
-## Nível 5 — Full Stack sólido
+## Nível 5 — Engenheiro de produto
 
-Você:
+Características:
 
-* domina fluxo completo;
-* cria APIs boas;
-* cria UI funcional;
-* integra sistemas;
-* entende autenticação, banco, deploy básico.
+```text
+Penso em usuário
+Penso em manutenção
+Penso em falhas
+Tomo decisões técnicas simples
+Melhoro código com intenção
+```
 
 Meta:
 
-> Ser autônomo em produto web completo.
+```text
+Entregar funcionalidade com qualidade.
+```
 
 ---
 
 ## Nível 6 — Full Cycle
 
-Você:
+Características:
 
-* desenvolve;
-* testa;
-* entrega;
-* observa;
-* investiga produção;
-* entende impacto técnico.
+```text
+Desenvolvo
+Configuro
+Rodo
+Faço deploy
+Leio logs
+Investigo produção
+```
 
 Meta:
 
-> Ser responsável pelo ciclo de vida do software.
+```text
+Ser responsável pelo ciclo de vida da aplicação.
+```
 
 ---
 
 ## Nível 7 — IA-first engineer
 
-Você:
+Características:
 
-* usa IA com método;
-* cria features com IA;
-* integra LLM;
-* avalia respostas;
-* projeta fluxos inteligentes.
+```text
+Uso IA com método
+Crio features com IA
+Avalio respostas
+Trato falhas da IA
+Projeto fluxos inteligentes
+```
 
 Meta:
 
-> Construir software potencializado por IA.
+```text
+Construir software potencializado por IA.
+```
 
 ---
 
 ## Nível 8 — Referência técnica
 
-Você:
+Características:
 
-* orienta outros;
-* define padrões;
-* decide arquitetura;
-* antecipa riscos;
-* comunica trade-offs.
+```text
+Oriento outras pessoas
+Defino padrões
+Antecipo riscos
+Explico trade-offs
+Melhoro o time
+```
 
 Meta:
 
-> Ser alguém que melhora o time, não só o código.
-
----
-
-# 7. Como estudar sem travar
-
-Quando não souber o que fazer, use esta ordem:
-
-```
-1. Pegue algo pequeno
-2. Faça funcionar
-3. Rode
-4. Explique o fluxo
-5. Ache uma falha
-6. Melhore uma coisa
-7. Anote
+```text
+Ser referência técnica real.
 ```
 
 ---
 
-# 8. Checklist diário fixo
+# 11. Como sentir progresso todos os dias
 
-Use todo dia.
+Todo dia eu devo terminar com pelo menos uma dessas vitórias:
 
+```text
+Fiz algo rodar
+Entendi um fluxo
+Corrigi um erro
+Expliquei melhor um conceito
+Melhorei um nome
+Separei uma responsabilidade
+Criei uma tela
+Conectei frontend e backend
+Li um dado no banco
+Tratei uma falha
 ```
-[ ] Construí algo pequeno?
-[ ] Rodei de verdade?
-[ ] Entendi entrada, processamento e saída?
-[ ] Identifiquei uma falha?
-[ ] Fiz uma melhoria?
-[ ] Anotei o que aprendi?
-```
 
-Se marcou 4 de 6, o treino valeu.
+Progresso não é só terminar feature.
+
+Progresso também é entender melhor.
 
 ---
 
-# 9. Checklist semanal
+# 12. Registro diário
 
-Uma vez por semana, responda:
+No fim de cada treino, eu preencho:
 
+```text
+Data:
+Tempo de treino:
+
+O que construí:
+O que rodei:
+O que quebrei:
+O que entendi:
+O que ainda não entendi:
+Qual foi minha pequena vitória:
+Próximo passo:
 ```
+
+Exemplo:
+
+```text
+Data: 28/04
+Tempo de treino: 25 min
+
+O que construí: POST /tasks
+O que rodei: chamada via Postman
+O que quebrei: enviei title vazio
+O que entendi: controller recebe request e chama service
+O que ainda não entendi: como o Spring cria o service
+Qual foi minha pequena vitória: consegui salvar no banco
+Próximo passo: tratar erro de title vazio
+```
+
+---
+
+# 13. Checklist diário final
+
+Antes de encerrar o treino, eu marco:
+
+```text
+[ ] Construí algo pequeno
+[ ] Rodei de verdade
+[ ] Testei pelo menos um erro
+[ ] Expliquei entrada, processamento e saída
+[ ] Anotei uma dúvida
+[ ] Defini o próximo passo
+```
+
+Se eu marquei 4 de 6, o treino valeu.
+
+---
+
+# 14. Checklist semanal
+
+Uma vez por semana, eu respondo:
+
+```text
 O que eu consigo fazer hoje que não conseguia antes?
-Onde ainda dependo demais de tutorial?
-Onde usei IA sem pensar?
+Onde ainda estou dependendo de tutorial?
+Onde usei IA como muleta?
 Qual conceito apareceu várias vezes?
-Qual parte do sistema eu entendo melhor agora?
+Qual parte do sistema entendo melhor agora?
+Qual parte ainda parece mágica?
 Qual será meu próximo pequeno salto?
 ```
 
 ---
 
-# 10. O projeto guia
+# 15. Ordem recomendada de execução
 
-Para não ficar pulando de assunto, mantenha um projeto principal:
+Eu devo seguir esta ordem:
 
-## Projeto: TaskFlow IA
-
-Um sistema de tarefas evolutivo.
-
-### Fase 1
-
-Backend CRUD.
-
-### Fase 2
-
-Frontend simples.
-
-### Fase 3
-
-Banco real.
-
-### Fase 4
-
-Autenticação.
-
-### Fase 5
-
-Filtros, paginação e dashboard.
-
-### Fase 6
-
-Docker.
-
-### Fase 7
-
-Deploy.
-
-### Fase 8
-
-Logs e observabilidade.
-
-### Fase 9
-
-IA para sugestão de prioridade.
-
-### Fase 10
-
-IA para resumo semanal.
-
-### Fase 11
-
-RAG com documentos do usuário.
-
-### Fase 12
-
-Automação/agent simples.
-
-Esse projeto pode te acompanhar por meses.
-
----
-
-# 11. Como saber que você ultrapassou o guia
-
-Você começa a “seguir com as próprias pernas” quando:
-
-* não pergunta mais “o que estudar?”;
-* olha um problema e quebra em partes;
-* sabe escolher entre alternativas;
-* usa IA para comparar, não para copiar;
-* consegue explicar decisões;
-* entende impacto de mudanças;
-* consegue ensinar alguém mais júnior.
-
-Esse é o sinal.
-
----
-
-# 12. Seu próximo passo imediato
-
-Comece pela **Etapa 1**.
-
-Hoje, faça isso:
-
-```
-Crie ou pegue um endpoint simples.
-Explique o fluxo completo:
-Request → Controller → Service → Repository → Response
-Anote o que você não entendeu.
+```text
+1. Backend CRUD consciente
+2. Spring e HTTP
+3. Arquitetura inicial
+4. PostgreSQL
+5. Performance inicial
+6. HTML/CSS/JS
+7. Full Stack funcional
+8. Git profissional
+9. Docker e Full Cycle
+10. IA-first
 ```
 
-Não vá para arquitetura avançada ainda.
-
-Seu primeiro grande salto é:
-
-> **entender profundamente aquilo que você já faz superficialmente.**
+Eu não devo pular para IA avançada antes de entender o sistema básico.
 
 ---
 
-# Perguntas para ajustar a próxima versão do guia
+# 16. Regra anti-trava
 
-Responda só estas 4:
+Quando eu travar, devo fazer isto:
 
-1. Você quer usar **React** no frontend ou prefere começar com HTML/JS puro antes?
-2. Você usa mais **PostgreSQL, MySQL, Oracle ou outro banco** no trabalho?
-3. Seu ambiente local com Java/Spring já está pronto para codar todo dia?
-4. Você quer que o projeto guia seja mesmo um **TaskFlow IA** ou prefere algo mais próximo do seu trabalho real?
+```text
+1. Reduzir o problema
+2. Fazer a menor versão possível
+3. Rodar
+4. Ler o erro
+5. Escrever o que entendi
+6. Só depois pedir ajuda
+```
+
+Pergunta principal:
+
+```text
+Qual é o menor próximo passo?
+```
+
+---
+
+# 17. Quando eu sei que estou evoluindo
+
+Sinais reais de evolução:
+
+```text
+Começo a explicar o que faço
+Leio erros com menos medo
+Faço perguntas melhores
+Uso menos cópia e cola
+Percebo responsabilidades misturadas
+Consigo criar pequenas features sozinho
+Consigo conectar tela com API
+Consigo olhar logs com intenção
+Consigo discordar da IA
+```
+
+---
+
+# 18. Quando eu ultrapassei este guia
+
+Eu começo a seguir com as próprias pernas quando:
+
+```text
+Não pergunto mais “o que estudar?”
+Olho um problema e quebro em partes
+Escolho ferramentas com intenção
+Explico trade-offs
+Uso IA para comparar ideias
+Consigo ensinar alguém mais júnior
+Consigo construir e operar um sistema pequeno completo
+```
+
+Esse é o objetivo.
+
+---
+
+# 19. Próxima ação imediata
+
+Hoje eu devo começar pela Etapa 1.
+
+Minha primeira missão:
+
+```text
+Criar o projeto TaskFlow IA
+Criar entidade Task
+Criar POST /tasks
+Rodar
+Enviar JSON
+Ver resposta
+Anotar o fluxo
+```
+
+Registro obrigatório de hoje:
+
+```text
+O que entrou na API?
+Qual classe recebeu?
+Qual classe processou?
+Qual classe salvou?
+O que voltou como resposta?
+O que eu ainda não entendi?
+```
+
+---
+
+# 20. Frase guia
+
+Eu não preciso saber tudo hoje.
+
+Eu preciso treinar todos os dias para entender melhor do que ontem.
+
+```text
+Construir.
+Rodar.
+Quebrar.
+Entender.
+Melhorar.
+Explicar.
+Repetir.
+```
